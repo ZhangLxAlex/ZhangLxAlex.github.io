@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.model.zlx.zhanglxalex.mapper.TMyUserMapper">
+	<resultMap id="tBusVaOnlineShopMap" type="com.model.zlx.zhanglxalex.entity.TMyUserEntity" >
+	 <result column="id" property="id"/>
+	 <result column="name" property="name"/>
+	 <result column="age" property="age"/>
+	 <result column="sex" property="sex"/>
+	</resultMap>
+
+	<select id="findByCondition" parameterType="com.model.zlx.zhanglxalex.entity.TMyUserEntity" resultType="com.model.zlx.zhanglxalex.entity.TMyUserEntity">
+		SELECT
+			t.id AS "id" ,
+			t.name AS "name" ,
+			t.sex AS "sex" ,
+			t.age AS "age"
+		FROM
+			t_my_user t
+	</select>
+
+</mapper>

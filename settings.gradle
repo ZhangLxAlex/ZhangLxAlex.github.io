@@ -1,0 +1,6 @@
+rootProject.name = 'ZhangLxAlex'
+include 'service'
+include 'core'
+include 'common'
+include 'api'
+
