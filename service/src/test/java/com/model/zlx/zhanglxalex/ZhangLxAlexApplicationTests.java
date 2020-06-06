@@ -12,18 +12,18 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class ZhangLxAlexApplicationTests {
 
-	@Test
-	public void contextLoad() {
-		System.out.println("123");
-	}
+    @Test
+    public void contextLoad() {
+        System.out.println("123");
+    }
 
-	@Autowired
-	private TMyUserMapper tMyUserMapper;
+    @Autowired
+    private TMyUserMapper tMyUserMapper;
 
-	@Test
-	public void contextLoads() {
-		TMyUserEntity userEntity = new TMyUserEntity();
-		System.out.println(tMyUserMapper.findByCondition(userEntity).toString());
-	}
+    @Test
+    public void contextLoads() {
+        TMyUserEntity userEntity = new TMyUserEntity();
+        System.out.println(tMyUserMapper.findByCondition(userEntity).toString());
+    }
 
 }
