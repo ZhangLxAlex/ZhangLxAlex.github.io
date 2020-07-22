@@ -62,4 +62,11 @@ public class LockTests {
         }
     }
 
+    public static void main(String[] args) {
+        Thread thread = new Thread(()->{
+            System.out.println("1");
+        },"zlx");
+        thread.start();
+    }
+
 }
