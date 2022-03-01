@@ -108,6 +108,9 @@ subprojects {
         
         //aop
         compile 'org.springframework.boot:spring-boot-starter-aop'
+
+        implementation 'com.guicedee.services:bouncycastle:1.2.2.1-jre17'
+
     }
 }
 
