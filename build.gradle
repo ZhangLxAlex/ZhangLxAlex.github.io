@@ -111,6 +111,15 @@ subprojects {
 
         implementation 'com.guicedee.services:bouncycastle:1.2.2.1-jre17'
 
+        //guava
+        compile 'com.google.guava:guava:31.1-jre'
+
+//        compile('org.ethereum:ethereumj-core:1.5.0-RELEASE')
+//        compile('com.alibaba:fastjson:1.2.83')
+//        compile('org.web3j:core:5.0.0')
+
+
+
     }
 }
 
